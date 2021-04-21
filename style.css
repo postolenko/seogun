@@ -317,12 +317,13 @@ textarea:focus {
 
 .row {
     width: 100%;
+    min-width: 1920px;
     margin: 0 auto;
     padding: 0 25px;
 }
 
 .row_2 {
-    max-width: 1760px;
+    width: 1760px;
 }
 
 .overflow_wrapp {
