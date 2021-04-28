@@ -1092,10 +1092,6 @@ textarea:focus {
     padding: 29px 0 13px 0;
 }
 
-.title_wrapp h2 {
-
-}
-
 .two_cols_2 {
     display: flex;
     display: -webkit-flex;
@@ -1331,10 +1327,6 @@ textarea:focus {
 /*-- /Section 1 - About Page --*/
 
 /*-- Section 1 - Projects Page --*/
-
-.two_cols_2_2 {
-
-}
 
 .two_cols_2_2 > .left {
     width: 185px;
