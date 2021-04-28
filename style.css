@@ -1734,7 +1734,7 @@ textarea:focus {
 .red_heavy {
     font-family: 'Gilroy Heavy' !important;
     font-weight: 900 !important;
-    color: #d40c0c;
+    color: #d40c0c !important;
 }
 
 .select_link {
