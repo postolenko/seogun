@@ -1946,6 +1946,252 @@ textarea:focus {
 
 /*-- /Section 1 - Personal Info Page --*/
 
+/*-- Section - 404 --*/
+
+.page_404 {
+    position: relative;
+    background-color: #fff;
+}
+
+.bg_404 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg_404_sect {
+    /*background-color: #fff;*/
+}
+
+.descript_404 {
+    width: 1009px;
+    height: 760px;
+    margin: 3% auto 0 auto;
+    padding: 132px 0 0 235px;
+    background-image: url(img/404.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title_404 {
+    position: relative;
+}
+
+.shot {
+    width: 17px;
+    height: 28px;
+    background-image: url(img/shot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title_404 .shot:nth-child(1) {
+    position: absolute;
+    top: 127px;
+    left: 34px;
+    z-index: 2;
+}
+
+.title_404 .shot:nth-child(2) {
+    position: absolute;
+    top: 158px;
+    left: 237px;
+    z-index: 2;
+}
+
+p.red_404 {
+    font-family: 'Gilroy Heavy';
+    font-weight: 900;
+    font-size: 225px;
+    line-height: 225px;
+    color: #e51212;
+}
+
+.descript_404_text p {
+    font-family: 'Gilroy Heavy';
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 52px;
+    color: #fff;
+}
+
+.descript_404 p:nth-child(2) {
+    padding-left: 50px;
+}
+
+/*-- /Section - 404 --*/
+
+/*-- Section - 500 --*/
+
+.bg_500 {
+    width: 1426px;
+    height: 750px;
+    margin: 3% auto 0 auto;
+    padding: 125px 0 0 243px;
+    background-image: url(img/500.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content_500 {
+
+}
+
+.title_500 {
+    position: relative;
+}
+
+.title_500 .shot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.title_500 .shot:nth-child(1) {
+    top: 89px;
+    left: 47px;
+}
+
+.title_500 .shot:nth-child(2) {
+    top: 155px;
+    left: 237px;
+}
+
+.title_500 .shot:nth-child(3) {
+    top: 38px;
+    left: 367px;
+}
+
+.title_500 h3 {
+    font-family: 'Gilroy Heavy';
+    font-weight: 900;
+    font-size: 225px;
+    line-height: 225px;
+    color: #e51212;
+}
+
+.title_500 p {
+    font-family: 'Gilroy Heavy';
+    padding-left: 10px;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 65px;
+    color: #e51212;
+}
+
+.content_500_footer {
+    padding-left: 90px;
+}
+
+.content_500_footer p:nth-child(1) {
+    font-family: 'Gilroy Heavy';
+    padding-top: 22px;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 52px;
+    color: #fff;
+}
+
+.content_500_footer p:nth-child(2) {
+    font-family: 'Gilroy Heavy';
+    padding-top: 8px;
+    padding-left: 54px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.content_500_footer_2 {
+    width: 390px;
+    margin-left: 145px;
+    margin-top: 24px;
+}
+
+.content_500_footer_2 p {
+    font-family: 'Gilroy Heavy';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+}
+
+/*-- /Section - 500 --*/
+
+/*-- Section - Admin Text --*/
+
+.admin_text {
+    width: 1413px;
+    height: 775px;
+    margin: 3% auto 0 auto;
+    padding: 256px 0 0 125px;
+    background-image: url(img/admin_text.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.admin_text_content {
+    max-width: 830px;
+    text-align: center;
+}
+
+.admin_text_content h3 {
+    font-family: 'Gilroy Heavy';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 82px;
+    color: #e51212;
+    letter-spacing: 3px;
+}
+
+.mail_wrapp {
+    padding: 58px 0 100px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.red_link_2 {
+    font-size: 20px;
+    line-height: 20px;
+    color: #e51212;
+    border-bottom: 1px solid transparent;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.red_link_2:hover {
+    border-bottom: 1px solid #e51212;
+}
+
+/*-- /Section - Admin Text --*/
+
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
@@ -2021,4 +2267,10 @@ footer {
 
 .white_link:hover {
     border-bottom: 1px solid #fff;
+}
+
+.inlines_2 {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    padding-bottom: 5px;
 }

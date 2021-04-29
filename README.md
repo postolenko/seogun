@@ -5,3 +5,6 @@
 # http://postolenko.github.io/seogun/subscration.html
 # http://postolenko.github.io/seogun/tickets.html
 # http://postolenko.github.io/seogun/personal_info.html
+# http://postolenko.github.io/seogun/404.html
+# http://postolenko.github.io/seogun/500.html
+# http://postolenko.github.io/seogun/admin_text.html
