@@ -2263,10 +2263,6 @@ p.red_404 {
     border-bottom: 1px solid #e9eef2;
 }
 
-.thumb {
-
-}
-
 .thumb_title {
     display: flex;
     display: -webkit-flex;
@@ -2319,10 +2315,6 @@ p.red_404 {
     line-height: 1;
 }
 
-.icon_link img {
-
-}
-
 .table_5 .red_pill {
     margin: 5px 0;
 }
@@ -2332,8 +2324,6 @@ p.red_404 {
     display: -webkit-flex;
     height: 100%;
     margin-top: -1px;
-    /*border-top: 1px solid #e9eef2;*/
-    /*border-bottom: 1px solid #e9eef2;*/
 }
 
 .table_5_inner .cell {
@@ -2478,7 +2468,219 @@ p.red_404 {
     left: 0;
 }
 
-/*-- .Section 1 - Dashboard Page --*/
+/*-- /Section 1 - Dashboard Page --*/
+
+/*-- Section 1 - Subaccounts Page --*/
+
+.table_6_sect {
+    margin-bottom: 25px;
+}
+
+.table_6_wrapp {
+    margin-bottom: 15px;
+}
+
+.table_6_title {
+    padding: 13px 35px 13px 35px;
+    background-color: #e3f1ff;
+}
+
+.table_6_title h2 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.table_6 .table_row {
+    display: flex;
+    display: -webkit-flex;
+    min-height: 51px;
+    border-bottom: 1px solid #e9eef2;
+}
+
+.table_6 .table_row .cell {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    flex-grow: 1;
+    padding: 10px 30px 11px 70px;
+    border-right: 1px solid #e9eef2;
+}
+
+.table_6 .table_row .cell:nth-child(1) {
+    width: 4.5%;
+    padding-left: 15px;
+}
+
+.table_6 .table_row .cell:nth-child(2) {
+    width: 32%;
+}
+
+.table_6 .table_row .cell:nth-child(3) {
+    width: 32.5%;
+}
+
+.table_6 .table_row .cell:nth-child(4) {
+    width: 31%;
+}
+
+.table_6  .table_header {
+    background-color: #eef7ff;
+    border-bottom: none;
+}
+
+.table_6 h3 {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.table_6 p {
+    font-size: 14px;
+    line-height: 15px;
+    color: #000;
+}
+
+.checkbox label {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.checkbox input {
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid rgb(227, 18, 18);
+}
+
+.checkbox input:checked {
+    display: block;
+    background-image: url(img/checked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.link_3 {
+    font-size: 14px;
+    line-height: 14px;
+    color: #020202;
+    border-bottom: 1px solid #020202;
+    -webkit-transition-property: border, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.link_3:hover {
+    color: #017efe;
+    border-bottom: 1px solid #017efe;
+}
+
+
+.table_7 {
+    /*margin-bottom: 90px;*/
+}
+
+.table_7 .table_row {
+    display: flex;
+    display: -webkit-flex;
+    min-height: 51px;
+    border-bottom: 1px solid #e9eef2;
+}
+
+.table_7 .table_header {
+    background-color: #eef7ff;
+    border-bottom: none;
+    min-height: 46px;
+}
+
+.table_7 .table_row .cell {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    flex-grow: 1;
+    border-right: 1px solid #e9eef2;
+    padding: 10px 30px 11px 50px;
+}
+
+.table_7 .table_row .cell:nth-child(1) {
+    width: 34%;
+    padding-left: 40px;
+}
+
+.table_7 .table_row .cell:nth-child(2) {
+    width: 23%;
+}
+
+.table_7 .table_row .cell:nth-child(3) {
+    width: 22%;
+}
+
+.table_7 .table_row .cell:nth-child(4) {
+    width: 21%;
+}
+
+.table_7 h3 {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.table_7 p {
+    font-size: 14px;
+    line-height: 15px;
+    color: #000;
+}
+
+.checked_red {
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/checked_red.svg);
+}
+
+.grey_disabled {
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/grey_disabled.svg);
+}
+
+
+/*-- /Section 1 - Subaccounts Page --*/
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
