@@ -10,3 +10,4 @@
 # http://postolenko.github.io/seogun/undergoing_technical.html
 # http://postolenko.github.io/seogun/dashboard.html
 # http://postolenko.github.io/seogun/subaccounts.html
+# http://postolenko.github.io/seogun/competitors.html

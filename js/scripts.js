@@ -84,4 +84,26 @@ $(document).ready(function() {
         }
     });
 
+    // -----------
+
+    new Chartist.Line('.chart_1', {
+      labels: [4, 5, 6, 7, 8],
+      series: [
+        [0, 1, 0, 1, 0]
+        ]
+      }, {
+        fullWidth: true,
+        chartPadding: {
+          right: 40,
+          left: -15
+        },
+        // showLine: false,
+        axisX: {
+          labelInterpolationFnc: function(value, index) {
+            return value + " sep";
+          }
+        },
+        height: '80px'
+    });
+
 });
