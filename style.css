@@ -3167,7 +3167,7 @@ p.red_404 {
 }
 
 p.red_val {
-    color: #df1313;
+    color: #df1313 !important;
     padding-right: 13px;
     position: relative;
 }
@@ -3186,7 +3186,7 @@ p.red_val {
 }
 
 p.green_val {
-    color: #1eb916;
+    color: #1eb916 !important;
     padding-right: 13px;
     position: relative;
 }
@@ -3215,13 +3215,99 @@ p.green_val {
     color: #000;
 }
 
-.table_8_wrapp .pagination {
-    margin: 7px 0;
-}
-
 /*-- /Section 1 - Competitors Page --*/
 
+/*-- Section 1 - Pages Page --*/
 
+.table_9_wrapp {
+    margin: 6px 0;
+    overflow-x: auto;
+}
+
+.table_9 {
+    display: table;
+    width: 100%;
+}
+
+.table_9 h3 {
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.table_9 p {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #000;
+}
+
+.table_9 .table_row {
+    display: table-row;
+}
+
+.table_9 .table_row.table_header {
+    min-height: 47px;
+    background-color: #eef7ff;
+}
+
+.table_9 .table_row .cell {
+    display: table-cell;
+    border-right: 1px solid #e9eef2;
+    border-bottom: 1px solid #e9eef2;
+    height: 47px;
+    padding: 16px 30px 10px 20px;
+}
+
+.table_9 .table_row:nth-child(1) .cell {
+    border-bottom: none;
+}
+
+.table_9 .table_row .cell:last-child {
+    border-right: none;
+}
+
+.table_9_inner {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+}
+
+.table_9_inner .inner_cell:nth-child(1) {
+    width: calc(100% - 50px);
+    padding-right: 14px;
+}
+
+.table_9_inner .inner_cell:nth-child(2) {
+    width: 50px;
+    padding-left: 14px;
+}
+
+.table_9 .table_row .cell:nth-child(1) {
+    padding-left: 30px;
+}
+
+.table_9 .table_row .cell:last-child {
+    padding-right: 30px;
+}
+
+.table_9 .blue_link {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.table_9_inner .green_val,
+.table_9_inner .red_val {
+    position: relative;
+    left: -10px;
+}
+
+/*-- /Section 1 - Pages Page --*/
 
 
 /*-------------------------------------------*/

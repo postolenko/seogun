@@ -11,3 +11,4 @@
 # http://postolenko.github.io/seogun/dashboard.html
 # http://postolenko.github.io/seogun/subaccounts.html
 # http://postolenko.github.io/seogun/competitors.html
+# http://postolenko.github.io/seogun/pages.html
