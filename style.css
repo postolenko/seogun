@@ -318,7 +318,6 @@ textarea:focus {
 
 .row {
     width: 100%;
-    /*min-width: 1920px;*/
     max-width: 1920px;
     min-width: 1600px;
     margin: 0 auto;
@@ -326,7 +325,6 @@ textarea:focus {
 }
 
 .row_2 {
-    /*width: 1760px;*/
     max-width: 1760px;
     width: 100%;
 }
@@ -352,169 +350,6 @@ textarea:focus {
     background-size: cover;
     background-image: url(img/dots_bg.png);
 }
-
-/*-- Slick --*/
-
-.slick-arrow {
-    display: block;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    opacity: .6;
-    margin-top: -40px;
-    background: #ffffff;
-    border: 1px solid transparent;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
-    -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
-    -webkit-transition-property: box-shadow, opacity;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: box-shadow, opacity;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: box-shadow, opacity;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: box-shadow, opacity;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: box-shadow, opacity;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-
-.slick-arrow:hover {
-    opacity: 1;
-    -webkit-box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);
-    -moz-box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);
-    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);
-}
-
-.slick-arrow img {
-    display: block;
-    width: 36px;
-    height: auto;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.slick-prev {
-    left: -21px;
-}
-
-.slick-prev img {
-    left: -2px;
-}
-
-.slick-next {
-    right: -21px;
-}
-
-.slick-next img {
-    right: -6px;
-}
-
-.slick-dots {
-    text-align: center;
-}
-
-.slick-dots li {
-    display: inline-block;
-    vertical-align: top;
-    cursor: pointer;
-    margin: 4px;
-}
-
-.slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    background: transparent;
-    position: relative;
-    border: 2px solid #006df0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.slick-dots li.slick-active button {
-    background: #006df0;
-}
-
-/*-- /Slick --*/
-
-/*-- Breadcrumbs --*/
-
-/*.breadcrumbs_wrapp {
-    padding: 40px 0 20px 0;
-}
-
-.breadcrumbs li {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 5px;
-}
-
-.breadcrumbs li:after {
-    position: relative;
-    top: -2px;
-    left: 5px;
-    content: "\2192";
-    font-size: 13px;
-    line-height: 23px;
-    color: #333333;
-}
-
-.breadcrumbs li:last-child:after {
-    display: none;
-}
-
-.breadcrumbs li a {
-    border-bottom: 1px solid transparent;
-    font-size: 18px;
-    line-height: 23px;
-    color: #333333;
-}
-
-.breadcrumbs li a:link,
-.breadcrumbs li a:visited {
-    border-bottom: 1px solid transparent;
-}
-
-.breadcrumbs li a:active,
-.breadcrumbs li a.active {
-    border-bottom: 1px solid #333333;
-}
-
-.breadcrumbs li a:hover {
-    border-bottom: 1px solid #333333;
-}
-
-.breadcrumbs li:last-child a {
-    pointer-events: none;
-    cursor: default;
-    opacity: .6;
-    border-bottom: 1px solid transparent;
-}*/
-
-/*-- /Breadcrumbs --*/
 
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
@@ -1967,10 +1802,6 @@ textarea:focus {
     left: 0;
 }
 
-.bg_404_sect {
-    /*background-color: #fff;*/
-}
-
 .descript_404 {
     width: 1009px;
     height: 760px;
@@ -2608,10 +2439,6 @@ p.red_404 {
     border-bottom: 1px solid #017efe;
 }
 
-.table_7 {
-    /*margin-bottom: 90px;*/
-}
-
 .table_7 .table_row {
     display: flex;
     display: -webkit-flex;
@@ -3092,10 +2919,6 @@ p.red_404 {
     overflow-x: auto;
 }
 
-.table_8 {
-
-}
-
 .table_8 .table_row {
     display: flex;
     display: -webkit-flex;
@@ -3204,10 +3027,6 @@ p.green_val {
     position: absolute;
     top: 2px;
     right: 0;
-}
-
-.thumb_4 {
-
 }
 
 .thumb_4 h3 {
