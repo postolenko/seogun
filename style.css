@@ -2100,6 +2100,10 @@ p.red_404 {
     border-bottom: 1px solid #e9eef2;
 }
 
+.thumb {
+    width: 100%;
+}
+
 .thumb_title {
     display: flex;
     display: -webkit-flex;
