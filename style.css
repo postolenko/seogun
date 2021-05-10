@@ -1227,14 +1227,14 @@ textarea:focus {
 .plus_pill:after {
     display: block;
     content: "";
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     background-image: url(img/plus.svg);
     position: absolute;
-    top: 9px;
+    top: 8px;
     right: 14px;
 }
 
@@ -2387,6 +2387,11 @@ p.red_404 {
     color: #000;
 }
 
+.table_6 .checkbox {
+    position: relative;
+    top: 1px;
+}
+
 .checkbox label {
     display: inline-block;
     vertical-align: top;
@@ -2396,8 +2401,8 @@ p.red_404 {
 .checkbox input {
     cursor: pointer;
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     background-color: transparent;
     border: none;
     border-radius: 3px;
@@ -2789,7 +2794,7 @@ p.red_404 {
 .thumb_3 {
     display: inline-flex;
     display: -webkit-inline-flex;
-    margin: 2px 0;
+    margin: 5px 0 5px 0;
 }
 
 .thumb_3 > div:nth-child(1) {
@@ -3085,11 +3090,12 @@ p.green_val {
     display: table-cell;
     border-right: 1px solid #e9eef2;
     border-bottom: 1px solid #e9eef2;
-    height: 47px;
+    min-height: 47px;
     padding: 16px 30px 10px 20px;
 }
 
 .table_9 .table_row:nth-child(1) .cell {
+    padding-bottom: 16px;
     border-bottom: none;
 }
 
@@ -3133,6 +3139,256 @@ p.green_val {
 }
 
 /*-- /Section 1 - Pages Page --*/
+
+/*-- Section 1 - Keywords Page --*/
+
+.two_cols_4_2 {
+    padding: 5px 0;
+}
+
+.two_cols_4_2 > .col_1 {
+    width: 60%;
+}
+
+.two_cols_4_2 > .col_2 {
+    width: 40%;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.inlines_3_2 {
+    margin: 0 -17px;
+}
+
+.inlines_3_2 > div {
+    padding: 5px 28px;
+}
+
+.inlines_4 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 -4px;
+}
+
+.inlines_4 > div {
+    padding: 2px 4px;
+}
+
+.inlines_4 .white_pill,
+.inlines_4 .plus_pill {
+    margin: 0;
+}
+
+.red_pill.plus_pill {
+    position: relative;
+    padding-right: 50px;
+}
+
+.red_pill.plus_pill:after {
+    background-image: url(img/white_plus.svg);
+}
+
+.red_pill.plus_pill:hover {
+    color: #fff;
+    background-color: #d40c0c;
+}
+
+.inlines_5 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 -17px;
+}
+
+.inlines_5 > div {
+    padding: 5px 17px;
+}
+
+.thumb_3 .dropdown_box {
+    width: auto;
+    margin: 0;
+}
+
+.thumb_3 .active_val {
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #a3a3a3;
+}
+
+.thumb_3 .dropdown_box .dropdown_list > div {
+    margin: 5px 0;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #a3a3a3;
+}
+
+.thumb_3 .dropdown_box.active .dropdown_list {
+    margin-top: 20px;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+.thumb_3 .dropdown_title:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-image: url(img/arrow_down_tr.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: transform;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: transform;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: transform;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.table_10_wrapp {
+    overflow-x: auto;
+}
+
+.table_10 {
+    display: table;
+    width: 100%;
+}
+
+.table_10 .table_row .cell {
+    display: table-cell;
+}
+
+.table_10 .table_row {
+    display: table-row;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.table_10 .table_row:hover {
+    background-color: #eef7ff;
+}
+
+.table_10 .table_row.table_header {
+    min-height: 47px;
+    background-color: #eef7ff;
+}
+
+.table_10 .table_row .cell {
+    display: table-cell;
+    border-right: 1px solid #e9eef2;
+    border-bottom: 1px solid #e9eef2;
+    min-height: 50px;
+    padding: 11px 20px 10px 20px;
+}
+
+.table_10 .table_row .cell:nth-child(1) {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.table_10 .table_row:nth-child(1) .cell {
+    border-bottom: none;
+    padding-bottom: 11px;
+}
+
+.table_10 .table_row .cell:nth-child(1) .checkbox {
+    position: relative;
+    top: -4px;
+}
+
+.table_10 .table_row:nth-child(1) .cell:nth-child(1) .checkbox {
+    top: 0;
+}
+
+.table_10 .blue_link {
+    position: relative;
+    top: -4px;
+}
+
+.table_10 .table_row .cell:last-child {
+    border-right: none;
+}
+
+.table_10 h3 {
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.table_10 p {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #000;
+}
+
+.table_10 a {
+    white-space: nowrap;
+}
+
+.icons_list {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    margin: 5px 15px 0 -4px;
+}
+
+.icons_list li {
+    padding: 2px 4px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.icons_list li img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+/*-- /Section 1 - Keywords Page --*/
 
 
 /*-------------------------------------------*/

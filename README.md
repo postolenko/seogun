@@ -12,3 +12,4 @@
 # http://postolenko.github.io/seogun/subaccounts.html
 # http://postolenko.github.io/seogun/competitors.html
 # http://postolenko.github.io/seogun/pages.html
+# http://postolenko.github.io/seogun/keywords.html

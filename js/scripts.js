@@ -1,3 +1,25 @@
+function getPrice(parentBlock) {
+  payTable = parentBlock.find(".table");
+  tableRow = payTable.find(".table_row");  
+  price = 0;
+  tableRow.each(function() {
+    filterCheckbox = $(this).find(".ch_childrens input");
+    if(filterCheckbox.is(":checked")) {
+      radio = $(this).find(".radio input");
+      radio.each(function() {
+        if( $(this).is(":checked") ) {
+          radioVal = parseInt($(this).val());
+          console.log(radioVal);
+          price += radioVal;
+        }
+      });
+    } else {
+      console.log(0);
+    }
+  });
+  parentBlock.find(".priceVal").text(price);
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -104,6 +126,33 @@ $(document).ready(function() {
           }
         },
         height: '80px'
+    });
+
+    // ------------
+
+    $(".ch_childrens input").on("change", function() {
+      parentBlock = $(this).closest(".checkboxes_array");
+      chChildrens = parentBlock.find(".ch_childrens input");
+      mainCheckbox = parentBlock.find(".main_checkbox input");
+      chChildrens.each(function() {
+        if (!$(this).is(":checked")) {
+          mainCheckbox.prop("checked", false);
+          return false;
+        } else {
+          mainCheckbox.prop("checked", true);
+        }
+      });
+      getPrice(parentBlock);
+    });
+
+    $(".main_checkbox input").on("change", function() {
+      parentBlock = $(this).closest(".checkboxes_array");
+      chChildrens = parentBlock.find(".ch_childrens input");
+      if (!$(this).is(":checked")) {
+        chChildrens.prop("checked", false);
+      } else {
+        chChildrens.prop("checked", true);
+      }
     });
 
 });
