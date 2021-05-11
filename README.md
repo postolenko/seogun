@@ -14,3 +14,4 @@
 # http://postolenko.github.io/seogun/pages.html
 # http://postolenko.github.io/seogun/keywords.html
 # http://postolenko.github.io/seogun/subscribe_info.html
+# http://postolenko.github.io/seogun/registry.html

@@ -171,4 +171,28 @@ $(document).ready(function() {
       parentTable.find(".cell").removeClass("bg");
     });
 
+    // ------------
+
+    $(".show_pass").on("click", function(e) {
+      e.preventDefault();
+      parentBlock = $(this).closest(".input_wrapp");
+      parentBlock.toggleClass("show_password");
+    });
+
+    $(".pass_back").on("keyup", function(e) {
+      e.preventDefault();
+      parentBlock = $(this).closest(".input_wrapp");
+      passFront = parentBlock.find(".pass_front");
+      passFront.val($(this).val());
+      console.log(passFront.val());
+    });
+
+    $(".pass_front").on("keyup", function(e) {
+      e.preventDefault();
+      parentBlock = $(this).closest(".input_wrapp");
+      passBack = parentBlock.find(".pass_back");
+      passBack.val($(this).val());
+      console.log(passBack.val());
+    });
+
 });
