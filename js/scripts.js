@@ -108,25 +108,27 @@ $(document).ready(function() {
 
     // -----------
 
-    new Chartist.Line('.chart_1', {
-      labels: [4, 5, 6, 7, 8],
-      series: [
-        [0, 1, 0, 1, 0]
-        ]
-      }, {
-        fullWidth: true,
-        chartPadding: {
-          right: 40,
-          left: -15
-        },
-        // showLine: false,
-        axisX: {
-          labelInterpolationFnc: function(value, index) {
-            return value + " sep";
-          }
-        },
-        height: '80px'
-    });
+    if($(".chart_1").length > 0) {
+      new Chartist.Line('.chart_1', {
+        labels: [4, 5, 6, 7, 8],
+        series: [
+          [0, 1, 0, 1, 0]
+          ]
+        }, {
+          fullWidth: true,
+          chartPadding: {
+            right: 40,
+            left: -15
+          },
+          // showLine: false,
+          axisX: {
+            labelInterpolationFnc: function(value, index) {
+              return value + " sep";
+            }
+          },
+          height: '80px'
+      });
+    }
 
     // ------------
 
@@ -153,6 +155,20 @@ $(document).ready(function() {
       } else {
         chChildrens.prop("checked", true);
       }
+    });
+
+    // ------------
+
+    $('.info_table').on('mouseover', '.cell', function() {
+      index = $(this).index();
+      parentTable = $(this).closest(".info_table");
+      tableRow = parentTable.find(".table_row");
+      tableRow.find(".cell").removeClass("bg");
+      tableRow.find(".cell:eq("+index+")").addClass("bg");
+    });
+
+    $('.info_table').on('mouseleave', '.cell', function() {
+      parentTable.find(".cell").removeClass("bg");
     });
 
 });
