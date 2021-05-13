@@ -402,4 +402,34 @@ $(document).ready(function() {
         });
       }
 
+      // --------------
+
+      if($("#chart_9").length > 0) {
+        new Chartist.Bar('#chart_9', {
+          labels: [0, 2, 4, 6, 8, 10],
+          series: [
+            [0, 0, 2, 2, 20, 0, 0]
+            ]
+          }, {
+            fullWidth: true,
+            chartPadding: {
+              right: 40,
+              left: -15
+            },
+            // showLine: false,
+            axisX: {
+              labelInterpolationFnc: function(value, index) {
+                return "Sep " + value;
+              }
+            },
+            height: '250px'
+        }).on('draw', function(data) {
+          if(data.type === 'bar') {
+            data.element.attr({
+              style: 'stroke-width: 139px'
+            });
+          }
+        });
+      }
+
 });
