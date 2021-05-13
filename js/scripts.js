@@ -184,7 +184,6 @@ $(document).ready(function() {
       parentBlock = $(this).closest(".input_wrapp");
       passFront = parentBlock.find(".pass_front");
       passFront.val($(this).val());
-      console.log(passFront.val());
     });
 
     $(".pass_front").on("keyup", function(e) {
@@ -192,7 +191,215 @@ $(document).ready(function() {
       parentBlock = $(this).closest(".input_wrapp");
       passBack = parentBlock.find(".pass_back");
       passBack.val($(this).val());
-      console.log(passBack.val());
     });
+
+    // ------------
+
+    if($("#chart_2").length> 0) {
+      new Chartist.Line('#chart_2', {
+          labels: [1, 2, 3, 4, 5, 6, 7, 8],
+          series: [
+            [5, 9, 7, 8, 5, 3, 5, 4]
+          ]
+        }, {
+          low: 0,
+          showArea: true,
+          height: '55px',
+          showLine: true,
+          showPoint: false,
+          fullWidth: true,
+          showLabel: false,
+          axisX: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0
+          },
+          axisY: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0
+          }
+        });
+      }
+
+    if($("#chart_3").length> 0) {
+      new Chartist.Line('#chart_3', {
+          labels: [1, 2, 3, 4, 5, 6, 7, 8],
+          series: [
+            [5, 9, 7, 8, 5, 3, 5, 4]
+          ]
+        }, {
+          low: 0,
+          showArea: true,
+          height: '55px',
+          showLine: true,
+          showPoint: false,
+          fullWidth: true,
+          showLabel: false,
+          axisX: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0
+          },
+          axisY: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0
+          }
+        });
+      }
+
+    if($("#chart_4").length> 0) {
+      new Chartist.Line('#chart_4', {
+          labels: [1, 2, 3, 4, 5, 6, 7, 8],
+          series: [
+            [5, 9, 7, 8, 5, 3, 5, 4]
+          ]
+        }, {
+          low: 0,
+          showArea: true,
+          height: '55px',
+          showLine: true,
+          showPoint: false,
+          fullWidth: true,
+          showLabel: false,
+          axisX: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0
+          },
+          axisY: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0
+          }
+        });
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const circle = new CircularProgressBar('pie');
+      });
+
+      if($("#chart_5").length> 0) {
+        new Chartist.Line('#chart_5', {
+            labels: [1, 2, 3, 4, 5, 6, 7, 8],
+            series: [
+              [5, 9, 7, 8, 5, 3, 5, 4]
+            ]
+          }, {
+            low: 0,
+            showArea: false,
+            height: '35px',
+            showLine: true,
+            // showPoint: false,
+            fullWidth: true,
+            showLabel: false,
+            axisX: {
+              showGrid: false,
+              showLabel: false,
+              offset: 0
+            },
+            axisY: {
+              showGrid: false,
+              showLabel: false,
+              offset: 0
+            }
+          });
+      }
+
+      if($("#chart_6").length> 0) {
+        new Chartist.Line('#chart_6', {
+            labels: [1, 2, 3, 4, 5, 6, 7, 8],
+            series: [
+              [5, 9, 7, 8, 5, 3, 5, 4]
+            ]
+          }, {
+            low: 0,
+            showArea: false,
+            height: '35px',
+            showLine: true,
+            // showPoint: false,
+            fullWidth: true,
+            showLabel: false,
+            axisX: {
+              showGrid: false,
+              showLabel: false,
+              offset: 0
+            },
+            axisY: {
+              showGrid: false,
+              showLabel: false,
+              offset: 0
+            }
+          });
+      }
+
+      if($("#chart_7").length> 0) {
+        new Chartist.Line('#chart_7', {
+            labels: [1, 2, 3, 4, 5, 6, 7, 8],
+            series: [
+              [5, 9, 7, 8, 5, 3, 5, 4]
+            ]
+          }, {
+            low: 0,
+            showArea: false,
+            height: '35px',
+            showLine: true,
+            // showPoint: false,
+            fullWidth: true,
+            showLabel: false,
+            axisX: {
+              showGrid: false,
+              showLabel: false,
+              offset: 0
+            },
+            axisY: {
+              showGrid: false,
+              showLabel: false,
+              offset: 0
+            }
+          });
+      }
+
+      if($("#chart_8").length> 0) {
+        new Chartist.Line('#chart_8', {
+            labels: [1, 2, 3, 4, 5, 6, 7, 8],
+            series: [
+              [5, 9, 7, 8, 5, 3, 5, 4]
+            ]
+          }, {
+            low: 0,
+            showArea: false,
+            height: '35px',
+            showLine: true,
+            // showPoint: false,
+            fullWidth: true,
+            showLabel: false,
+            axisX: {
+              showGrid: false,
+              showLabel: false,
+              offset: 0
+            },
+            axisY: {
+              showGrid: false,
+              showLabel: false,
+              offset: 0
+            }
+          });
+      }
+
+      // --------------
+
+      if($("#pie_chart")) {
+        new Chartist.Pie('#pie_chart', {
+          series: [20, 10]
+        }, {
+          donut: true,
+          donutWidth: 2,
+          startAngle: 270,
+          total: 60,
+          showLabel: false
+        });
+      }
 
 });
