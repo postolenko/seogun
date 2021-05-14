@@ -4318,19 +4318,15 @@ p.red_p {
     stroke: #e51212 !important;
 }
 
-/*.pie_chart svg {
-    transform: rotate(-90deg);
-}*/
-
 .thumbnails_5_wrapp {
     display: flex;
     display: -webkit-flex;
-    margin: 0 -6px;
+    margin: 0 -6px 2px -6px;
 }
 
 .thumb_5 {
     width: calc(33.33% - 12px);
-    margin: 6px;
+    margin: 8px 6px;
     border: 1px solid #e6e6e6;
     background-color: #fff;
     padding: 12px 30px 10px 30px;
@@ -4508,6 +4504,10 @@ p.red_p {
     right: 0;
 }
 
+.border_box_2 {
+    padding-bottom: 8px;
+}
+
 .chart_4_wrapp {
 
 }
@@ -4545,6 +4545,159 @@ p.red_p {
 .chart_4 .ct-grid.ct-horizontal:nth-child(1) {
     display: none;
 }
+
+.chart_4 .ct-label.ct-vertical.ct-start {
+    position: relative;
+    top: 7px;
+}
+
+.chart_4_wrapp {
+    position: relative;
+    padding-top: 12px;
+    padding-left: 40px;
+}
+
+.chart_title {
+    text-align: center;
+}
+
+.chart_title h3 {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.chart_4_wrapp .chart_title {
+    position: absolute;
+    top: 50%;
+    left: -19px;
+    margin-top: -35px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.checkboxes_thumbs {
+    display: flex;
+    display: -webkit-flex;
+    /*margin: 0 -30px;*/
+    padding: 23px 10px 6px 10px;
+}
+
+.checkbox_thumb .checkbox {
+    margin: 10px 30px;
+}
+
+.checkbox_thumb .checkbox label {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+}
+
+.checkbox_thumb .checkbox input {
+    margin-right: 13px;
+}
+
+.pink {
+
+}
+
+.checkbox.pink input {
+    background-color: #ffc9c9;
+    border: 1px solid #ffc9c9;
+}
+
+.checkbox.red input {
+    background-color: #e51212;
+    border: 1px solid #e51212;
+}
+
+.checkbox.red input:checked {
+    background-image: url(img/checked_white.png);
+}
+
+.checkbox.light_blue input {
+    background-color: #ddefff;
+    border: 1px solid #ddefff;
+}
+
+.checkbox.blue input {
+    background-color: #b8d7f2;
+    border: 1px solid #b8d7f2;
+}
+
+.checkbox.transparent input {
+    background-color: #fff;
+    border: 1px solid #bababa;
+}
+
+.checkbox.transparent label {
+    color: #b8b8b8;
+}
+
+.border_box_3 {
+    padding-bottom: 1px;
+}
+
+.big_chart_wrapp {
+    position: relative;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.big_chart_wrapp .chart_title {
+    position: absolute;
+    top: 50%;
+    left: -19px;
+    margin-top: -21px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.big_chart .ct-series-a .ct-bar {
+    stroke: #ffc9c9;
+}
+
+.big_chart .ct-series-b .ct-bar {
+    stroke: #e51212;
+}
+
+.big_chart .ct-series-c .ct-bar {
+    stroke: #ddefff;
+}
+
+.big_chart .ct-label.ct-vertical.ct-start {
+    font-family: 'Gilroy';
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #838383;
+}
+
+.big_chart .ct-label.ct-horizontal.ct-end {
+    font-family: 'Gilroy';
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #838383;
+}
+
+.big_chart .ct-label.ct-vertical.ct-start {
+    position: relative;
+    top: 7px;
+}
+
+.big_chart .ct-grid {
+    stroke: #edf0f2;
+    stroke-width: .5px;
+    stroke-dasharray: 0;
+}
+
+.big_chart .ct-grid.ct-horizontal {
+    stroke-width: 0;
+}
+
+.checkboxes_thumbs_2 {
+    padding: 16px 10px 6px 10px;
+}
+
 
 /*-- /Section 1 - Overview Page --*/
 

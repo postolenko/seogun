@@ -432,4 +432,26 @@ $(document).ready(function() {
         });
       }
 
+      // ------------
+
+      if($("#big_chart").length > 0) {
+        new Chartist.Bar('#big_chart', {
+          labels: ['icon1', 'icon2', 'icon3', 'icon4', 'icon5', 'icon6', 'icon7', 'icon8', 'icon9', 'icon10', 'icon11', 'icon12', 'icon13', 'icon14', 'icon15', 'icon16'],
+          series: [
+            [1, 10, 2, 4, 1, 10, 2, 4, 1, 10, 2, 4, 1, 10, 2, 4],
+            [0, 8, 4, 3, 9, 3, 5, 1, 10, 1, 4, 5, 2, 3, 5, 7],
+            [10, 3, 4, 6, 3, 7, 8, 9, 10, 4, 5, 6, 3, 5, 6, 10],
+          ]
+        }, {
+          stackBars: true,
+          height: '210px'
+        }).on('draw', function(data) {
+          if(data.type === 'bar') {
+            data.element.attr({
+              style: 'stroke-width: 40px'
+            });
+          }
+        });
+      }
+
 });
