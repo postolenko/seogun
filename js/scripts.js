@@ -20,12 +20,38 @@ function getPrice(parentBlock) {
   parentBlock.find(".priceVal").text(price);
 }
 
+function getIconsPostion() {
+  $(".big_chart_icons img").each(function() {
+      iconIndex = $(this).index();
+      icon = $(this);
+      iconWidth = $(this).width() / 2;
+      $("#big_chart svg .ct-labels foreignObject").each(function() {
+        foreignObjectIndex = $(this).index();
+        foreignObjectWidth = $(this).width() / 2;
+        if(iconIndex == foreignObjectIndex) {
+          offsetTop = $(this).offset().top + 15;
+          offsetleft = $(this).offset().left + foreignObjectWidth - iconWidth;
+          icon.offset({"left" : offsetleft, "top" : offsetTop});
+        }
+      });
+    });
+}
+
+function getBarsWidth() {
+  ctHorizontalLeftCoord1 = $("#chart_9 .ct-grid.ct-horizontal:eq(2)").offset().left;
+  ctHorizontalLeftCoord2 = $("#chart_9 .ct-grid.ct-horizontal:eq(1)").offset().left;
+  barWidth = parseInt( ctHorizontalLeftCoord1 - ctHorizontalLeftCoord2 - 1 );
+
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+
+var barWidth;
 
 $(window).load(function() {
 
@@ -35,7 +61,9 @@ $(window).load(function() {
 
 $(window).resize(function() {
 
-
+  getIconsPostion();
+  getBarsWidth();
+  $("#chart_9 .ct-bar").attr('style', 'stroke-width: '+barWidth+'px !important');
 
 });
 
@@ -120,7 +148,6 @@ $(document).ready(function() {
             right: 40,
             left: -15
           },
-          // showLine: false,
           axisX: {
             labelInterpolationFnc: function(value, index) {
               return value + " sep";
@@ -408,13 +435,15 @@ $(document).ready(function() {
         new Chartist.Bar('#chart_9', {
           labels: [0, 2, 4, 6, 8, 10],
           series: [
-            [0, 0, 2, 2, 20, 0, 0]
+            [0, 0, 2, 2, 10, 0, 0],
+            [6, 6, 6, 6, 6, 6, 6],
+            [3, 3, 3, 3, 3, 3, 3]
             ]
           }, {
             fullWidth: true,
             chartPadding: {
-              right: 40,
-              left: -15
+              right: 0,
+              left: 0
             },
             // showLine: false,
             axisX: {
@@ -422,19 +451,18 @@ $(document).ready(function() {
                 return "Sep " + value;
               }
             },
-            height: '250px'
-        }).on('draw', function(data) {
-          if(data.type === 'bar') {
-            data.element.attr({
-              style: 'stroke-width: 139px'
-            });
-          }
+            height: '250px',
+            stackBars: true,
+        }).on('created', function(data) {
+          getBarsWidth();
+          $("#chart_9 .ct-bar").attr('style', 'stroke-width: '+barWidth+'px !important');
         });
       }
 
       // ------------
 
       if($("#big_chart").length > 0) {
+
         new Chartist.Bar('#big_chart', {
           labels: ['icon1', 'icon2', 'icon3', 'icon4', 'icon5', 'icon6', 'icon7', 'icon8', 'icon9', 'icon10', 'icon11', 'icon12', 'icon13', 'icon14', 'icon15', 'icon16'],
           series: [
@@ -451,6 +479,8 @@ $(document).ready(function() {
               style: 'stroke-width: 40px'
             });
           }
+        }).on('created', function() {
+          getIconsPostion();
         });
       }
 

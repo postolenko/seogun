@@ -124,7 +124,7 @@ body {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     min-height: 100%;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     overflow: hidden;
     min-width: 1600px;
 }
@@ -910,11 +910,34 @@ textarea:focus {
     position: relative;
 }
 
-.help_bg_img {
-    width: auto;
+.help_bg:before {
+    display: block;
+    background-color: #fff;
+    content: "";
     min-width: 100%;
+    height: calc(100% - 180px);
     position: absolute;
-    top: -55px;
+    top: 108px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+.page_bg_top {
+    min-width: 100%;
+    min-height: 164px;
+    position: absolute;
+    top: -53px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+.page_bg_bottom {
+    min-width: 100%;
+    min-height: 110px;
+    position: absolute;
+    bottom: -34px;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
@@ -4086,7 +4109,6 @@ p.red_p {
 
 .two_cols_5 > .left {
     width: 33.33%;
-    /*padding: 1px 10px 1px 0;*/
     padding: 1px 8px 1px 0;
 }
 
@@ -4518,7 +4540,19 @@ p.red_p {
 }
 
 .chart_4 .ct-series-a .ct-bar {
-    stroke: #d70206;
+    stroke: #ffc9c9;
+}
+
+.chart_4 .ct-series-b .ct-bar {
+    stroke: #e51212;
+}
+
+.chart_4 .ct-series-c .ct-bar {
+    stroke: #ddefff;
+}
+
+.chart_4 .ct-series-d .ct-bar {
+    stroke: #b8d7f2;
 }
 
 .chart_4 .ct-grid {
@@ -4571,7 +4605,7 @@ p.red_p {
     position: absolute;
     top: 50%;
     left: -19px;
-    margin-top: -35px;
+    margin-top: -18px;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
 }
@@ -4579,7 +4613,6 @@ p.red_p {
 .checkboxes_thumbs {
     display: flex;
     display: -webkit-flex;
-    /*margin: 0 -30px;*/
     padding: 23px 10px 6px 10px;
 }
 
@@ -4594,10 +4627,6 @@ p.red_p {
 
 .checkbox_thumb .checkbox input {
     margin-right: 13px;
-}
-
-.pink {
-
 }
 
 .checkbox.pink input {
@@ -4696,9 +4725,22 @@ p.red_p {
 }
 
 .checkboxes_thumbs_2 {
-    padding: 16px 10px 6px 10px;
+    padding: 0 10px 6px 10px;
 }
 
+.big_chart_icons {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+}
+
+.big_chart .ct-label.ct-horizontal.ct-end {
+    opacity: 0;
+}
+
+.chart_4_box {
+    position: relative;
+}
 
 /*-- /Section 1 - Overview Page --*/
 
