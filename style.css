@@ -4086,7 +4086,8 @@ p.red_p {
 
 .two_cols_5 > .left {
     width: 33.33%;
-    padding: 1px 10px 1px 0;
+    /*padding: 1px 10px 1px 0;*/
+    padding: 1px 8px 1px 0;
 }
 
 .two_cols_5 > .right {
