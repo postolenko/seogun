@@ -3952,10 +3952,6 @@ p.red_p {
     text-align: left;
 }
 
-.thumb_title {
-
-}
-
 .thumb_title h3 {
     font-size: 14px;
     line-height: 15px;
@@ -3971,10 +3967,6 @@ p.red_p {
 .val_thumb_inner > div:nth-child(1){
     padding-right: 6px;
     padding-top: 1px
-}
-
-.val_thumb_inner > div:nth-child(1){
-
 }
 
 .val_thumb_inner .num {
@@ -4085,10 +4077,6 @@ p.red_p {
 
 .val_3.red {
     color: #e51212;
-}
-
-.chart_2 svg {
-
 }
 
 .chart_2 .ct-line {
@@ -4711,10 +4699,6 @@ p.red_p {
 
 /*-- Section 1 - Ticket Subject Page --*/
 
-.chat_wrapp {
-
-}
-
 .chat_message {
     display: flex;
     display: -webkit-flex;
@@ -4786,7 +4770,6 @@ p.red_p {
 }
 
 /*-- /Section 1 - Ticket Subject Page --*/
-
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
@@ -4869,4 +4852,119 @@ footer {
     justify-content: flex-start;
     -webkit-justify-content: flex-start;
     padding-bottom: 5px;
+}
+
+/*-- Popup --*/
+
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.popup_bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 19;
+}
+
+.close_popup {
+    display: block;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(img/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.popup_content {
+    max-width: 630px;
+    width: 96%;
+    margin: 70px auto 30px auto;
+    padding: 47px 55px 30px 55px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+
+.close_popup {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url(img/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.popup_content .close_popup {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 2;
+}
+
+.popup_title {
+    padding-bottom: 11px;
+    text-align: center;
+}
+
+.popup_title h3 {
+    font-family: 'Gilroy Heavy';
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 900; 
+}
+
+.input_wrapp_2 input {
+    padding: 0 38px;
+}
+
+.input_wrapp_2 textarea {
+    padding: 10px 38px;
+    display: block;
+    width: 100%;
+    height: 295px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(217, 217, 217);
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+    font-weight: normal;
+}
+
+.submit_wrapp_2 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.submit_wrapp_2 .black_pill {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    padding-left: 19px;
+    padding-right: 19px;
 }

@@ -179,7 +179,7 @@
 					</div>
 				</div>
 				<div class="btn_wrapp">
-					<a href="#" class="black_pill">new ticket</a>
+					<a href="#" class="black_pill" data-popup-link = "popup_1">new ticket</a>
 				</div>
 			</div>
 		</section>
@@ -208,6 +208,31 @@
 	<!-- /Footer -->
 
 	</div>
+
+	<!-- Popup -->
+
+	<div class="popup popup_sect" data-popup = "popup_1">
+		<div class="popup_content">
+			<button type="button" class="close_popup"></button>
+			<div class="popup_title">
+				<h3>Add Ticket</h3>
+			</div>
+			<div class="form_wrapp_2">
+				<div class="input_wrapp input_wrapp_2">
+					<input type="text" name="name" placeholder="Subject" />
+				</div>
+				<div class="input_wrapp input_wrapp_2">
+					<textarea placeholder="Message"></textarea>
+				</div>
+				<div class="submit_wrapp_2">
+					<button type="submit" class="black_pill">Add ticket</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup_bg"></div>
+
+	<!-- Popup -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/chartist.css">
