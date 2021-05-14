@@ -16,3 +16,4 @@
 # http://postolenko.github.io/seogun/subscribe_info.html
 # http://postolenko.github.io/seogun/registry.html
 # http://postolenko.github.io/seogun/overview.html
+# http://postolenko.github.io/seogun/ticket_subject.html

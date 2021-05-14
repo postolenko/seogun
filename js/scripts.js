@@ -21,27 +21,30 @@ function getPrice(parentBlock) {
 }
 
 function getIconsPostion() {
-  $(".big_chart_icons img").each(function() {
-      iconIndex = $(this).index();
-      icon = $(this);
-      iconWidth = $(this).width() / 2;
-      $("#big_chart svg .ct-labels foreignObject").each(function() {
-        foreignObjectIndex = $(this).index();
-        foreignObjectWidth = $(this).width() / 2;
-        if(iconIndex == foreignObjectIndex) {
-          offsetTop = $(this).offset().top + 15;
-          offsetleft = $(this).offset().left + foreignObjectWidth - iconWidth;
-          icon.offset({"left" : offsetleft, "top" : offsetTop});
-        }
+  if($("#big_chart").length > 0 ) {
+    $(".big_chart_icons img").each(function() {
+        iconIndex = $(this).index();
+        icon = $(this);
+        iconWidth = $(this).width() / 2;
+        $("#big_chart svg .ct-labels foreignObject").each(function() {
+          foreignObjectIndex = $(this).index();
+          foreignObjectWidth = $(this).width() / 2;
+          if(iconIndex == foreignObjectIndex) {
+            offsetTop = $(this).offset().top + 15;
+            offsetleft = $(this).offset().left + foreignObjectWidth - iconWidth;
+            icon.offset({"left" : offsetleft, "top" : offsetTop});
+          }
+        });
       });
-    });
+  }
 }
 
 function getBarsWidth() {
-  ctHorizontalLeftCoord1 = $("#chart_9 .ct-grid.ct-horizontal:eq(2)").offset().left;
-  ctHorizontalLeftCoord2 = $("#chart_9 .ct-grid.ct-horizontal:eq(1)").offset().left;
-  barWidth = parseInt( ctHorizontalLeftCoord1 - ctHorizontalLeftCoord2 - 1 );
-
+  if($("#chart_9").length > 0 ) {
+    ctHorizontalLeftCoord1 = $("#chart_9 .ct-grid.ct-horizontal:eq(2)").offset().left;
+    ctHorizontalLeftCoord2 = $("#chart_9 .ct-grid.ct-horizontal:eq(1)").offset().left;
+    barWidth = parseInt( ctHorizontalLeftCoord1 - ctHorizontalLeftCoord2 - 1 );
+  }
 }
 
 var w = window,
@@ -303,9 +306,11 @@ $(document).ready(function() {
         });
       }
 
-      window.addEventListener('DOMContentLoaded', () => {
-        const circle = new CircularProgressBar('pie');
-      });
+      if($(".pie").length > 0) {
+        window.addEventListener('DOMContentLoaded', () => {
+          const circle = new CircularProgressBar('pie');
+        });
+      }
 
       if($("#chart_5").length> 0) {
         new Chartist.Line('#chart_5', {
@@ -417,7 +422,7 @@ $(document).ready(function() {
 
       // --------------
 
-      if($("#pie_chart")) {
+      if($("#pie_chart").length > 0) {
         new Chartist.Pie('#pie_chart', {
           series: [20, 10]
         }, {
