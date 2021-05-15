@@ -1691,6 +1691,7 @@ textarea:focus {
 .red_pill {
     display: inline-block;
     vertical-align: top;
+    cursor: pointer;
     min-width: 95px;
     padding: 6px 16px 6px 16px;
     border: 1px solid #d40c0c;
@@ -4967,4 +4968,373 @@ body.fixed {
     width: auto;
     padding-left: 19px;
     padding-right: 19px;
+}
+
+.popup_content_2 {
+    max-width: 895px;
+}
+
+.popup_two_cols {
+    display: flex;
+    display: -webkit-flex;
+    margin: 15px 0 0 0;
+}
+
+.popup_two_cols .col_1 {
+    width: 50%;
+    padding: 10px 13px 10px 0;
+}
+
+.popup_two_cols .col_2 {
+    width: 50%;
+    padding: 10px 0 10px 13px;
+}
+
+.title_3 {
+    padding-bottom: 11px;
+}
+
+.title_3 h3 {
+    text-transform: uppercase;
+    font-family: 'Gilroy';
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.inner_row {
+    padding-bottom: 39px;
+}
+
+.input_wrapp_3 input {
+    padding: 0 27px;
+}
+
+.add_pill {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 60px;
+    position: relative;
+}
+
+.add_pill:after {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url(img/add_plus.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+.grey_box {
+    margin: 10px 0 10px 0;
+    padding: 6px 27px 9px 27px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(217, 217, 217);
+}
+
+.add_row {
+    display: flex;
+    display: -webkit-flex;
+    padding: 9px 0;
+}
+
+.add_row > div:nth-child(1) {
+    width: calc(100% - 25px);
+}
+
+.add_row > div:nth-child(2) {
+    width: 25px;
+    padding-top: 1px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+.plus_btn {
+    display: block;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-image: url(img/plus_2.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.add_row .plus_btn {
+    margin-top: 2px;
+    position: relative;
+    right: -6px;
+}
+
+.add_row p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #0c0c0c;
+}
+
+.grey_box_2 {
+    min-height: 315px;
+}
+
+.add_row_2 > div:nth-child(1) {
+    padding-top: 2px;
+}
+
+.del_btn {
+    display: block;
+    width: 19px;
+    height: 23px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-image: url(img/delete_2.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.red_pill_3 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.submit_wrapp_3 {
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.popup_content_3 {
+    max-width: 900px;
+}
+
+.title_3_2 {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.title_3_2 > div:nth-child(1) {
+    width: 65%;
+}
+
+.title_3_2 > div:nth-child(2) {
+    width: 35%;
+    text-align: right;
+}
+
+.title_3_2 h3 {
+    padding-top: 4px;
+}
+
+.link_3 {
+    font-size: 14px;
+}
+
+.inner_row_2 {
+    padding-bottom: 24px;
+}
+
+.grey_box_3 {
+    min-height: 210px;
+}
+
+.buttons_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 16px -7px;
+}
+
+.buttons_wrapp > div {
+    width: 50%;
+    padding: 7px;
+}
+
+.transparent_pill_2 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 9px 15px 9px 15px;
+    border: 1px solid #e51212;
+    background: transparent;
+    font-size: 14px;
+    line-height: 17px;
+    color: #e51212;
+    font-weight: 600;
+    -webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent_pill_2:hover {
+    background: #e51212;
+    color: #fff;
+}
+
+.transparent_pill_3 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 9px 15px 9px 15px;
+    border: 1px solid #919191;
+    background: transparent;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    font-weight: 600;
+    -webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent_pill_3:hover {
+    background: #919191;
+    color: #fff;
+}
+
+.buttons_wrapp_2 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 30px -7px 0 -7px;
+}
+
+.buttons_wrapp_2 > div {
+    padding: 7px;
+}
+
+.grey_pill  {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px 28px 10px 28px;
+    border: none;
+    background: #f3f3f3;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    font-weight: normal;
+    -webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.grey_pill:hover {
+    background: #919191;
+    color: #fff;
+}
+
+.submit_wrapp_3_2 {
+    padding-bottom: 17px;
+}
+
+.submit_wrapp_3_2 .red_pill {
+    margin: 0;
+}
+
+.popup_content_4 {
+    max-width: 490px;
+}
+
+.buttons_wrapp_3 {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin: 0 -7px 18px -7px;
+    padding: 7px 0;
+}
+
+.buttons_wrapp_3 > div {
+    padding: 7px;
+}
+
+.buttons_wrapp_3 .black_pill {
+    min-width: 110px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.close_pill {
+    padding-right: 40px !important;
+    position: relative;
+}
+
+.close_pill:after {
+    display: block;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(img/close_white.svg);
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
 }
