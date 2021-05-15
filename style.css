@@ -5168,7 +5168,7 @@ body.fixed {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    padding: 9px 15px 9px 15px;
+    padding: 8px 15px 10px 15px;
     border: 1px solid #e51212;
     background: transparent;
     font-size: 14px;
@@ -5205,7 +5205,7 @@ body.fixed {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    padding: 9px 15px 9px 15px;
+    padding: 8px 15px 10px 15px;
     border: 1px solid #919191;
     background: transparent;
     font-size: 14px;
