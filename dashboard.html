@@ -108,7 +108,7 @@
 							<div class="right">
 								<div class="right_inlines">
 									<div>
-										<a href="#" class="white_pill plus_pill">Add Group</a>
+										<a href="#" class="white_pill plus_pill"  data-popup-link = "popup_5">Add Group</a>
 									</div>
 								</div>
 							</div>
@@ -147,7 +147,7 @@
 												</a>
 											</div>
 										</div>
-										<a href="#" class="red_pill">Add Domain</a>
+										<a href="#" class="red_pill" data-popup-link = "popup_6">Add Domain</a>
 									</div>
 								</div>
 							</div>
@@ -180,7 +180,14 @@
 								<div class="cell">
 									<ul class="links_list">
 										<li><a href="#"><img src="img/del_red.svg" alt=""></a></li>
-										<li><a href="#"><img src="img/notice_red.png" alt=""></a></li>
+										<li>
+											<a href="#"><img src="img/notice_red.png" alt=""></a>
+											<div class="icon_tooltip">
+												<h3>Related questions</h3>
+												<div class="img_box" style="background-image: url(img/tooltip_img.jpg)"></div>
+												<a href="#">Learn more</a>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -263,7 +270,7 @@
 												</a>
 											</div>
 										</div>
-										<a href="#" class="red_pill">Add Domain</a>
+										<a href="#" class="red_pill" data-popup-link = "popup_6">Add Domain</a>
 									</div>
 								</div>
 							</div>
@@ -395,6 +402,98 @@
 	<!-- /Footer -->
 
 	</div>
+
+	<!-- Popup -->
+
+	<div class="popup popup_sect" data-popup = "popup_5">
+		<div class="popup_content popup_content_4">
+			<button type="button" class="close_popup"></button>
+			<div class="popup_title">
+				<h3>Add New Group</h3>
+			</div>
+			<div class="input_wrapp input_wrapp_3">
+				<input type="text" name="name" placeholder="Group Name" />
+			</div>
+			<div class="buttons_wrapp_3">
+				<div>
+					<button type="button" class="black_pill close_pill">close</button>
+				</div>
+				<div>
+					<button type="button" class="black_pill">add</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup_sect" data-popup = "popup_6">
+		<div class="popup_content popup_content_5">
+			<button type="button" class="close_popup"></button>
+			<div class="popup_title popup_title_2">
+				<h3>Add New Domain</h3>
+			</div>
+			<div class="input_wrapp input_wrapp_3">
+				<input type="text" name="name" placeholder="Enter Domain Name" />
+			</div>
+			<div class="h3_wrapp">
+				<h3>select domain type</h3>
+			</div>
+			<div class="radios_wrapp">
+				<div class="radio_wrapp">
+					<input type="radio" name="radio" id="r_1">
+					<label for="r_1">Domain including subdomains *.example.com/*</label>
+				</div>
+				<div class="radio_wrapp">
+					<input type="radio" name="radio" id="r_2">
+					<label for="r_2">Only specified domain example.com/*</label>
+				</div>
+				<div class="radio_wrapp">
+					<input type="radio" name="radio" id="r_3">
+					<label for="r_3">Path including subfolders example.com/path/</label>
+				</div>
+				<div class="radio_wrapp">
+					<input type="radio" name="radio" id="r_4">
+					<label for="r_4">Only specified url example.com/path/</label>
+				</div>
+			</div>
+			<div class="input_wrapp input_wrapp_3">
+				<input type="text" name="name" placeholder="URL" />
+			</div>
+			<div class="input_wrapp input_wrapp_3 input_wrapp_select">
+				<select placeholder="Select Country">
+					<option value="-1">Select Country</option>
+					<option>Ukraine</option>
+					<option>Russia</option>
+					<option>Poland</option>
+				</select>
+			</div>
+			<div class="input_wrapp input_wrapp_3 input_wrapp_select">
+				<select placeholder="Select Searches">
+					<option value="-1">Select Searches</option>
+					<option>Search 1</option>
+					<option>Search 2</option>
+					<option>Search 3</option>
+				</select>
+			</div>
+			<div class="two_cols_title">
+				<div>
+					<h3>keywords</h3>
+				</div>
+				<div>
+					<a href="#" class="red_pill red_pill_2">import</a>
+				</div>
+			</div>
+			<div class="input_wrapp input_wrapp_3">
+				<textarea placeholder="List of Keywords you want to track"></textarea>
+			</div>
+			<div class="submit_wrapp_4">
+				<button type="submit" class="black_pill black_pill_2">add</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_bg"></div>
+
+	<!-- Popup -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/chartist.css">

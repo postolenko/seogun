@@ -72,6 +72,7 @@ $(document).ready(function() {
 
     $(".dropdown_title").on("click", function(e) {
       e.preventDefault();
+      $(".dropdown_box").removeClass("active");
       parent = $(this).closest(".dropdown_box");
       parent.toggleClass("active");
     });
