@@ -335,3 +335,11 @@
 	/*-- /Popup --*/
 
 }
+
+@media only screen and (min-width: 768px) {
+
+	#resp_nav {
+		display: block !important;
+	}
+
+}

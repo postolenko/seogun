@@ -68,6 +68,7 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
+  bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
   getIconsPostion();
   getBarsWidth();
   getRespParams();
