@@ -801,6 +801,14 @@ textarea:focus {
 
 /* ----- / Responsive Menu Button ------ */
 
+.resp_visible {
+    display: none;
+}
+
+.resp_novisible {
+    display: block;
+}
+
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
