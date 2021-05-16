@@ -385,6 +385,20 @@
 
 /*-- /Section 1 - About Page --*/
 
+/*-- Footer --*/
+
+.inlines {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.inlines > div {
+	text-align: center;
+	padding: 5px 15px;
+}
+
+/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 600px) {
