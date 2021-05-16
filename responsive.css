@@ -1,19 +1,279 @@
+@media only screen and (max-width: 1800px) {
+
+/*-- Section 1 - Main Page --*/
+
+.pistolet {
+    max-width: 59%;
+}
+
+/*-- /Section 1 - Main Page --*/
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+/*-- Section 1 - Main Page --*/
+
+	.promo_text {
+	    padding: 130px 0 30px 0;
+	}
+
+	.promo_text h1 {
+	    font-size: 52px;
+	    line-height: 94px;
+	}
+
+	.promo_text h2 {
+	    font-size: 30px;
+	    line-height: 37px;
+	}
+
+	.form_wrapp {
+    	padding: 12px 0 20px 0;
+	}
+
+	.form_box {
+    	min-height: 779px;
+	    padding: 20px 40px 45px 40px;
+	}
+
+	.list_1 {
+	    margin: 50px 0 35px 0px;
+	}
+
+	.list_1 li {
+	    margin: 5px 0;
+	}
+
+/*-- /Section 1 - Main Page --*/
+
+}
+
 @media only screen and (max-width: 1240px) {
 
+/*-- Header --*/
 
+.header_site_templ {
+    padding: 10px 0 5px 0;
+}
+
+.main_nav {
+    margin: 10px -15px;
+}
+
+.main_nav li {
+    padding: 5px 15px;
+}
+
+/*-- /Header --*/
+
+
+}
+
+@media only screen and (max-width: 1124px) {
+
+/*-- Section 1 - Main Page --*/
+
+.main_page_templ .left {
+    width: 57%;
+}
+
+.main_page_templ .right {
+    width: 43%;
+}
+
+.promo_text h1 {
+    font-size: 48px;
+    line-height: 67px;
+}
+
+.promo_text h2 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.form_box {
+    min-height: 670px;
+}
+
+.form_box_title h3 {
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.list_1 {
+    margin: 15px 0 15px 0;
+}
+
+/*-- /Section 1 - Main Page --*/
 
 }
 
 
 @media only screen and (max-width: 900px) {
 
+/*-- Section 1 - Main Page --*/
 
+.main_page_templ .left {
+    width: 48%;
+}
+
+.main_page_templ .right {
+    width: 52%;
+}
+
+.promo_text h1 {
+    font-size: 33px;
+    line-height: 45px;
+}
+
+.promo_text h2 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.pistolet {
+    max-width: 45%;
+}
+
+.red_link_wrapp {
+    padding: 10px 0;
+}
+
+.list_1 li {
+    padding: 8px 0 8px 42px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.list_1 li:before {
+    top: -9px;
+}
+
+.form_box {
+    min-height: 550px;
+}
+
+/*-- /Section 1 - Main Page --*/
+
+/*-- Popup --*/
+
+.h2_wrapp {
+    padding-bottom: 26px;
+}
+
+.h2_wrapp h2 {
+	font-size: 33px;
+	line-height: 41px;
+}
+
+/*-- /Popup --*/
 
 }
 
 @media only screen and (max-width: 767px) {
 
+/*-- Header --*/
 
+.wrapper {
+	padding-top: 50px;
+}
+
+.respmenubtn {
+	display: block;
+}
+
+.header_site {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.header_site_templ .left {
+    width: 0;
+}
+
+.header_site_templ .right {
+    width: calc(100% - 150px);
+    padding-right: 40px;
+    position: relative;
+	top: -8px;
+}
+
+.header_site_templ .right .respmenubtn {
+	position: absolute;
+    top: 16px;
+	right: 0;
+	z-index: 13;
+}
+
+#resp_nav {
+	/*display: block;*/
+	display: none;
+	width: 100%;
+	height: 100vh;
+	overflow-y: auto;
+	margin: 0;
+	padding: 90px 10px 50px 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 13;
+	background: #fff;
+}
+
+.main_nav {
+	display: block;
+	margin: 10px 0;
+}
+
+.main_nav li {
+	padding: 10px 0;
+	text-align: center;
+}
+
+.main_nav li a {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.header_site_templ .center {
+    width: 150px;
+    text-align: left;
+}
+
+.logo {
+    width: 150px;
+}
+
+/*-- /Header --*/
+
+/*-- Section 1 - Main Page --*/
+
+.main_page_templ {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.main_page_templ .left {
+    width: 100%;
+}
+
+.main_page_templ .right {
+    width: 100%;
+}
+
+.promo_text {
+    padding: 20px 0;
+}
+
+.pistolet {
+	display: none;
+}
+
+/*-- /Section 1 - Main Page --*/
 
 }
 
@@ -26,5 +286,52 @@
 
 @media only screen and (max-width: 480px) {
 
-	
+	.row {
+	    padding: 0 15px;
+	}
+
+	/*-- Section 1 - Main Page --*/
+
+	.form_box {
+	    padding: 20px 15px 15px 15px;
+	}
+
+	.promo_text h1 {
+	    font-size: 27px;
+	    line-height: 38px;
+	}
+
+	.promo_text h2 {
+	    font-size: 19px;
+	    line-height: 25px;
+	}
+
+	.form_box_title h3 {
+	    font-size: 36px;
+	    line-height: 42px;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Popup --*/
+
+	.popup_content {
+	    padding: 47px 34px 22px 34px;
+	}
+
+	.h2_wrapp h2 {
+	    font-size: 24px;
+	    line-height: 32px;
+	}
+
+	.input_wrapp_4 input {
+	    padding: 0 18px;
+	}
+
+	.black_pill_3 {
+	    min-width: 100%;
+	}
+
+	/*-- /Popup --*/
+
 }
