@@ -84,6 +84,9 @@
 									<div class="input_wrapp">
 										<input type="text" placeholder="Login" />
 									</div>
+									<!-- <div class="input_wrapp error_2">
+										<input type="text" placeholder="Введено неверное значение" />
+									</div> -->
 									<div class="input_wrapp">
 										<input type="text" placeholder="Password" />
 									</div>
@@ -97,7 +100,7 @@
 									</div>
 								</form>
 								<div class="red_link_wrapp">
-									<a href="#" class="red_link">Forget Password?</a>
+									<a href="#" class="red_link" data-popup-link = "popup_7">Forget Password?</a>
 								</div>
 							</div>
 							<ul class="list_1">
@@ -137,6 +140,24 @@
 	<!-- /Footer -->
 
 	</div>
+
+	<!-- Popup -->
+	<div class="popup popup_sect" data-popup = "popup_7">
+		<div class="popup_content popup_content_6">
+			<button type="button" class="close_popup"></button>
+			<div class="popup_title h2_wrapp">
+				<h2>Forget password?</h2>
+			</div>
+			<div class="input_wrapp input_wrapp_4">
+				<input type="email" name="email" placeholder="Your email" />
+			</div>
+			<div class="submit_wrapp_6">
+				<button type="submit" class="black_pill black_pill_3">send</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup_bg"></div>
+	<!-- Popup -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/chartist.css">

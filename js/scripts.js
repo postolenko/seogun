@@ -518,4 +518,11 @@ $(document).ready(function() {
       }
     });
 
+    // -------------
+
+    $(".del_btn_2, .del_btn_3").on("click", function(e) {
+      parentBlock = $(this).closest(".domain_tooltip");
+      parentBlock.remove();
+    });
+
 });
