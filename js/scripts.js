@@ -84,9 +84,13 @@ $(document).ready(function() {
 
     $(".dropdown_title").on("click", function(e) {
       e.preventDefault();
-      $(".dropdown_box").removeClass("active");
       parent = $(this).closest(".dropdown_box");
-      parent.toggleClass("active");
+      if(parent.hasClass("active")) {
+        parent.removeClass("active");
+      } else {
+        $(".dropdown_box").removeClass("active");
+        parent.addClass("active");
+      }
     });
 
     $(".val").on("click", function(e) {
