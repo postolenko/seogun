@@ -82,7 +82,6 @@
     font-display: swap;
 }
 
-
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -102,7 +101,7 @@ html {
 
 html.resp_page {
     min-width: 310px !important;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 html,
