@@ -97,8 +97,6 @@
 
 html {
     -webkit-text-size-adjust: 100%;
-/*    min-width: 1600px;*/
-    /*min-width: 1550px !important;*/
     min-width: 1550px !important;
 }
 
@@ -336,6 +334,7 @@ textarea:focus {
 .resp_page {
     min-width: 310px !important;
 }
+
 .resp_page .row,
 .resp_page .row_2 {
     min-width: 310px !important;

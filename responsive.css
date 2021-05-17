@@ -1,15 +1,15 @@
 @media only screen and (max-width: 1920px) {
-	.page_bg_top {
+	.resp_page .page_bg_top {
 		min-width: auto;
 		width: 100%;
 		height: auto;
 	}
-	.page_bg_bottom {
+	.resp_page .page_bg_bottom {
 		min-width: auto;
 		width: 100%;
 		height: auto;
 	}
-	.footer_bg {
+	.resp_page .footer_bg {
 		min-width: auto;
 		width: 100%;
 		height: auto;
@@ -138,39 +138,39 @@ h2 {
 
 /*-- Header --*/
 
-.header_site_templ {
+.resp_header .header_site_templ {
     padding: 10px 0 5px 0;
 }
 
-.main_nav {
+.resp_header  .main_nav {
     margin: 10px -10px;
 }
 
-.main_nav li {
+.resp_header  .main_nav li {
     padding: 5px 10px;
 }
 
-.header_site_templ .right > div.inlines_2 {
+.resp_header  .header_site_templ .right > div.inlines_2 {
     margin: 0 -10px;
 }
 
-.inlines_2 > div {
+.resp_header  .inlines_2 > div {
     padding: 0 10px;
 }
 
-.header_site_templ .left {
+.resp_header  .header_site_templ .left {
     width: calc(50% - 75px);
 }
 
-.header_site_templ .center {
+.resp_header  .header_site_templ .center {
     width: 150px;
 }
 
-.header_site_templ .right {
+.resp_header  .header_site_templ .right {
     width: calc(50% - 75px);
 }
 
-.logo {
+.resp_header  .logo {
     width: 150px;
     position: relative;
     top: 5px;
@@ -284,11 +284,11 @@ p.red_404 {
 
 /*-- Footer --*/
 
-.footer_section {
+.resp_page .footer_section {
     background: #000;
 }
 
-.footer_bg {
+.resp_page .footer_bg {
 	display: none;
 }
 
@@ -509,7 +509,7 @@ p.red_404 {
 
 /*-- Header --*/
 
-.wrapper {
+.resp_page  .wrapper {
 	padding-top: 50px;
 }
 
@@ -517,7 +517,7 @@ p.red_404 {
 	display: block;
 }
 
-.header_site {
+.header_site.resp_header  {
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -525,25 +525,25 @@ p.red_404 {
 	z-index: 3;
 }
 
-.header_site_templ .left {
+.resp_header  .header_site_templ .left {
     width: 0;
 }
 
-.header_site_templ .right {
+.resp_header  .header_site_templ .right {
     width: calc(100% - 150px);
     padding-right: 40px;
     position: relative;
 	top: -8px;
 }
 
-.header_site_templ .right .respmenubtn {
+.resp_header  .header_site_templ .right .respmenubtn {
 	position: absolute;
     top: 16px;
 	right: 0;
 	z-index: 13;
 }
 
-#resp_nav {
+.resp_header  #resp_nav {
 	/*display: block;*/
 	display: none;
 	width: 100%;
@@ -558,47 +558,47 @@ p.red_404 {
 	background: #fff;
 }
 
-.main_nav {
+.resp_header  .main_nav {
 	display: block;
 	margin: 10px 0;
 }
 
-.main_nav li {
+.resp_header  .main_nav li {
 	padding: 10px 0;
 	text-align: center;
 }
 
-.main_nav li a {
+.resp_header  .main_nav li a {
     font-size: 22px;
     line-height: 22px;
 }
 
-.header_site_templ .center {
+.resp_header  .header_site_templ .center {
     width: 150px;
     text-align: left;
 }
 
-.logo {
+.resp_header .logo {
     width: 150px;
     top: 0;
 }
 
-.resp_visible {
+.resp_header .resp_visible {
 	display: block;
 }
 
-.resp_novisible {
+.resp_header .resp_novisible {
     display: none;
 }
 
-.align_center {
+.resp_page .align_center {
 	display: flex;
 	display: -webkit-flex;
 	justify-content: center;
 	-webkit-justify-content: center;
 }
 
-.header_site .resp_visible {
+.resp_header .header_site .resp_visible {
 	padding: 5px 0;
 }
 
@@ -763,14 +763,10 @@ p.red_404 {
 
 }
 
-@media only screen and (max-width: 600px) {
-
-}
-
 
 @media only screen and (max-width: 480px) {
 
-	.row {
+	.resp_page .row {
 	    padding: 0 15px;
 	}
 
