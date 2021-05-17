@@ -100,6 +100,10 @@ html {
     min-width: 1550px !important;
 }
 
+html.resp_page {
+    min-width: 310px !important;
+}
+
 html,
 body {
     min-height: 100%;
