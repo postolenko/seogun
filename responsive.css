@@ -1,3 +1,21 @@
+@media only screen and (max-width: 1920px) {
+	.page_bg_top {
+		min-width: auto;
+		width: 100%;
+		height: auto;
+	}
+	.page_bg_bottom {
+		min-width: auto;
+		width: 100%;
+		height: auto;
+	}
+	.footer_bg {
+		min-width: auto;
+		width: 100%;
+		height: auto;
+	}
+}
+
 @media only screen and (max-width: 1800px) {
 
 /*-- Section 1 - Main Page --*/
@@ -263,6 +281,18 @@ p.red_404 {
 }
 
 /*-- /Section 1 - Subscribe Info Page --*/
+
+/*-- Footer --*/
+
+.footer_section {
+    background: #000;
+}
+
+.footer_bg {
+	display: none;
+}
+
+/*-- /Footer --*/
 
 }
 
@@ -770,7 +800,7 @@ p.red_404 {
 	/*-- Section - 404 --*/
 
 	.descript_404 {
-	    width: 340px;
+	    width: 335px;
 	    height: 266px;
 	    padding: 24px 0 0 42px;
 	    position: relative;
@@ -819,18 +849,6 @@ p.red_404 {
 	}
 
 	/*-- /Section - 500 --*/
-
-	/*-- Footer --*/
-
-	.footer_section {
-	    background: #000;
-	}
-
-	.footer_bg {
-		display: none;
-	}
-
-	/*-- /Footer --*/
 
 	/*-- Popup --*/
 

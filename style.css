@@ -97,6 +97,9 @@
 
 html {
     -webkit-text-size-adjust: 100%;
+/*    min-width: 1600px;*/
+    /*min-width: 1550px !important;*/
+    min-width: 1550px !important;
 }
 
 html,
@@ -124,9 +127,6 @@ body {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     min-height: 100%;
-    /*min-height: 100vh;*/
-    /*overflow: hidden;*/
-    /*min-width: 1600px;*/
     min-width: 100%;
     width: 100%;
 }
@@ -323,7 +323,7 @@ textarea:focus {
 .row {
     width: 100%;
     max-width: 1920px;
-    min-width: 1600px;
+    min-width: 1550px;
     margin: 0 auto;
     padding: 0 25px;
 }
@@ -333,6 +333,9 @@ textarea:focus {
     width: 100%;
 }
 
+.resp_page {
+    min-width: 310px !important;
+}
 .resp_page .row,
 .resp_page .row_2 {
     min-width: 310px !important;
@@ -1069,6 +1072,7 @@ textarea:focus {
 }
 
 .page_bg_top {
+    /*display: none;*/
     min-width: 100%;
     min-height: 164px;
     position: absolute;
@@ -1079,6 +1083,7 @@ textarea:focus {
 }
 
 .page_bg_bottom {
+    /*display: none;*/
     min-width: 100%;
     min-height: 110px;
     position: absolute;

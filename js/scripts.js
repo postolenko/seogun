@@ -65,6 +65,7 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 var barWidth;
 
 $(window).load(function() {
+
 });
 
 $(window).resize(function() {
