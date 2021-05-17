@@ -102,6 +102,7 @@ html {
 
 html.resp_page {
     min-width: 310px !important;
+    overflow: hidden;
 }
 
 html,
